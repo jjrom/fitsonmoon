@@ -57,6 +57,8 @@ L'association coins lon/lat est la suivante :
 # Creation du WMS #
 Voir le fichier moon.map
 
+La NASA fourni un serveur WMS de données sur la lune - http://onmoon.jpl.nasa.gov/wms.cgi
+
 # Creation du fichier de métadonnées GeoJSON #
 Voir le fichier output/test.json
 
