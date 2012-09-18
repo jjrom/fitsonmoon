@@ -1,0 +1,48 @@
+MAP
+    EXTENT -180.0 -90.0 180.0 90.0
+    IMAGECOLOR 255 255 255
+    IMAGEQUALITY 100
+    IMAGETYPE PNG
+    INTERLACE ON
+    SIZE 256 256
+    STATUS ON
+    TRANSPARENT ON
+    UNITS DD
+    DEBUG 0
+    OUTPUTFORMAT
+            NAME "AGGPNG"
+            DRIVER "AGG/PNG"
+            EXTENSION "png"
+            MIMETYPE "image/png"
+            IMAGEMODE RGBA
+            TRANSPARENT ON
+            FORMATOPTION "TRANSPARENT=ON"
+        END
+    WEB
+      IMAGEPATH "/tmp/"
+      IMAGEURL "/"
+      METADATA
+        "ows_enable_request"   "*"
+        "wms_title"          "WMS proxy for Moon"
+        "wms_onlineresource" "http://localhost/cgi-bin/mapserv?map=/Users/jrom/Documents/mapserver/moon.map&"
+        "wms_srs"            "EPSG:4326"
+        "wms_feature_info_mime_type"    "text/html"
+        "wms_extent"          "-180.0,-90.0,180.0,90.0"
+      END
+    END
+    PROJECTION
+      "init=epsg:4326"
+    END
+    LAYER
+        NAME "mars"
+        DATA "/Users/jrom/Documents/Devel/vrac/fitsonmoon/output/test_projected.tif"
+        OFFSITE 0 0 0
+        TYPE RASTER
+        PROJECTION
+            "proj=latlong"
+            "ellps=WGS84"
+            "datum=WGS84"
+        END
+    END
+END
+

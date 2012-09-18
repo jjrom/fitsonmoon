@@ -1,0 +1,17 @@
+{
+    "type":"FeatureCollection",
+    "totalResults":"1",
+    "features":[
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"MultiPolygon",
+                "coordinates":[[[[-52.0200,-16.2480],[-51.7630,-13.0030],[-49.7350,-13.2590],[-49.9690,-16.4510],[-52.0200,-16.2480]]]]
+            },
+            "properties":{
+                "identifier":"La lune",
+                "url":"http://toto.tif"
+            }
+        }
+    ]
+}
